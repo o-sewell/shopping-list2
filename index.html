@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="title"> Shopping List </h2>
+    <p class="intro"> Your <span class="intro-span">personal</span> shopping list </p>
+
+    <ul class="list"id="items-list">
+      <li>Loading Items</li>
+    </ul>
+
+  <form id="add-items" class="add-items">
+  <div class="input">
+    <input type="text" name="item" placeholder="Item Name" required>
+    <input class="btn blue" type="submit" value="Add Item">
+  </div>
+  <div class="btn blue" id="reset">reset</div>
+  <div class="btn blue" id="uncheck">uncheck</div>
+  <div class="btn blue" id="check">check</div>
+  </form>
+
+
+  </div>
+  <script src="list.js"></script>
+</body>

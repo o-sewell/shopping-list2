@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0
+}
+
+body {
+   font-family:'helvetica neue';
+}
+
+.wrapper {
+  background: #6FC6FF;
+  border-radius: 0.5em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding-top: 2em
+}
+
+@media(min-width: 800px) {
+  .wrapper {
+    width: 50%
+  }
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.intro {
+  margin-top: 1.875em;
+  margin-bottom: 0.625em;
+  margin-left: 0.625em;
+  color: #424242;
+  font-weight: 200;
+}
+
+.intro-span {
+  color: #3C93D5;
+}
+
+.list {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.625em 0;
+}
+
+.list > li {
+  list-style-type: none;
+  line-height: 1.2;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+  background-size: 100% 1.2em;
+  background-position: 0 1em;
+  background-origin: content-box;
+  font-size: 1.6em;
+  font-weight: 200;
+}
+
+#reset, #uncheck, #check {
+  cursor: pointer;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+.input {
+  margin: 30px auto;
+  text-align: center;
+}
+
+input[type="text"], input[type="submit"] {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  box-shadow: 0px 1px 0px 0px;
+}
+
+input[type="submit"] {
+  background:none;
+  border:none;
+  background-color: #55acee;
+  outline: none;
+}
+/* buttons */
+.btn {
+  border-radius: 0.35em;
+  padding: 0.625em 1em;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 0.625em;
+  margin-bottom: 0.625em;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
